@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/item_my_ticket"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/xicon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/xnama_wisata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/mregular"
+            android:textColor="@color/blackPrimary"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/xicon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/xjumlah_tiket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mregular"
+            android:textColor="@color/bluePrimary"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.567"
+            app:layout_constraintStart_toStartOf="@+id/xtotal_harga"
+            app:layout_constraintTop_toBottomOf="@+id/xtotal_harga" />
+
+        <TextView
+            android:id="@+id/xlokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/mlight"
+            android:textColor="@color/greyPrimary"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/xicon"
+            app:layout_constraintTop_toBottomOf="@+id/xnama_wisata" />
+
+        <TextView
+            android:id="@+id/xtotal_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/mregular"
+            android:textColor="@color/greenPrimary"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.125" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/div"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/xicon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgPrimary"
+    tools:context=".TicketDetailAct">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgPrimary">
+            <com.github.florent37.shapeofview.shapes.ArcView
+                app:shape_arc_cropDirection="outside"
+                android:id="@+id/view"
+                app:shape_arc_height="50dp"
+                app:shape_arc_position="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/wisata_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </com.github.florent37.shapeofview.shapes.ArcView>
+
+            <TextView
+                android:id="@+id/wisata_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/mregular"
+                android:text="@string/trip_name"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/wisata_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/mlight"
+                android:gravity="center"
+                android:lineSpacingExtra="9dp"
+                android:text="@string/trip_location"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wisata_name" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/bg_layout_white"
+                    android:orientation="vertical"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="30dp"
+                    android:paddingRight="24dp"
+                    android:paddingBottom="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/wisata_location">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mregular"
+                        android:text="@string/trip_menu_title"
+                        android:textColor="@color/blackPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/mlight"
+                        android:text="@string/trip_menu_desc"
+                        android:textColor="@color/greyPrimary"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@color/div" />
+
+                        <LinearLayout
+                            android:id="@+id/trip_menu1"
+                            android:layout_marginBottom="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/trip_menu_ic1"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:src="@drawable/ic_photo"/>
+
+                            <LinearLayout
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/wisata_photospots"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/blackPrimary"
+                                    android:fontFamily="@font/mregular"
+                                    />
+                                <TextView
+                                    android:id="@+id/trip_menu_tv_sec1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="4dp"
+                                    android:textColor="@color/greyPrimary"
+                                    android:text="Tripod Everywhere"
+                                    android:fontFamily="@font/mlight"
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/trip_menu2"
+                            android:layout_marginBottom="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:src="@drawable/icon_wifi"/>
+
+                            <LinearLayout
+                                android:id="@+id/trip_menu_ic2"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/wisata_wifi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/blackPrimary"
+                                    android:fontFamily="@font/mregular"
+                                    />
+                                <TextView
+                                    android:id="@+id/trip_menu_tv_sec2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="4dp"
+                                    android:textColor="@color/greyPrimary"
+                                    android:text="Connect for any tourist"
+                                    android:fontFamily="@font/mlight"
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/trip_menu3"
+                            android:layout_marginBottom="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:src="@drawable/icon_festival"/>
+
+                            <LinearLayout
+                                android:id="@+id/trip_menu_ic3"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/wisata_festival"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/blackPrimary"
+                                    android:fontFamily="@font/mregular"
+                                    />
+                                <TextView
+                                    android:id="@+id/trip_menu_tv_sec3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="4dp"
+                                    android:textColor="@color/greyPrimary"
+                                    android:text="Dance and Foods"
+                                    android:fontFamily="@font/mlight"
+                                    />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/mlight"
+                        android:id="@+id/wisata_rules"
+                        android:textColor="@color/greyPrimary"
+                        android:lineSpacingExtra="8dp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_btn_blue_primary"
+                android:fontFamily="@font/mmedium"
+                android:text="@string/buy_btn"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <LinearLayout
+                android:id="@+id/btn2"
+                android:layout_width="90dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_layout_white"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/btn1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_back" />
+            </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Any child View here, TabLayout for example. This View will NOT be blurred -->
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/progress"
+            style="@style/SpinKitView.Large.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/bluePrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </eightbitlab.com.blurview.BlurView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

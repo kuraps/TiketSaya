@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/intro_slidelinearlayout" >
+
+    <TextView
+        android:id="@+id/intro_slidedescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intro_slidetitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Secondary Text"
+        android:textAlignment="center"
+        android:fontFamily="@font/mlight"
+        android:textColor="#656565"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/intro_slidetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intro_slideimg"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Title MVreak"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/mregular"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <ImageView
+        android:id="@+id/intro_slideimg"
+        android:layout_width="291dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/intro_slide_img1" />
+
+</RelativeLayout>

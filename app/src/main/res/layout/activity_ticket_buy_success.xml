@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgPrimary"
+    tools:context=".TicketBuySuccessAct">
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        app:shape_arc_cropDirection="outside"
+        app:shape_arc_height="50dp"
+        app:shape_arc_position="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_gradient_primary_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_gradient_primary_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="246dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/icon_success_ticket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/mregular"
+        android:text="@string/ticket_buyed_title"
+        android:textColor="@color/blackPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/mlight"
+        android:gravity="center"
+        android:lineSpacingExtra="9dp"
+        android:text="@string/ticket_buyed_desc"
+        android:textAlignment="center"
+        android:textColor="@color/greyPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/bg_btn_blue_primary"
+        android:fontFamily="@font/mmedium"
+        android:text="@string/back_to_home"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+    <TextView
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="@font/mmedium"
+        android:text="@string/share_btn"
+        android:textColor="@color/greyPrimary"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

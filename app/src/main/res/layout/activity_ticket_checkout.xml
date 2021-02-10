@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgPrimary"
+    tools:context=".TicketCheckoutAct">
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        app:shape_arc_cropDirection="outside"
+        android:id="@+id/view"
+        app:shape_arc_height="50dp"
+        app:shape_arc_position="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bgheader_pisa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mregular"
+        android:text="@string/buy_title"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_layout_white"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="30dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mregular"
+            android:text="@string/buy_details_title"
+            android:textColor="@color/blackPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/mlight"
+            android:text="@string/buy_details_desc"
+            android:textColor="@color/greyPrimary"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/div" />
+
+        <LinearLayout
+            android:id="@+id/trip_menu1"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/trip_buy_ic"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_ticket_buy"/>
+
+            <LinearLayout
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="">
+
+                <TextView
+                    android:id="@+id/trip_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/blackPrimary"
+                    android:text="@string/trip_name"
+                    android:fontFamily="@font/mregular"
+                    />
+                <TextView
+                    android:id="@+id/trip_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/greyPrimary"
+                    android:text="@string/trip_location"
+                    android:fontFamily="@font/mlight"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/btnmines" />
+
+                <TextView
+                    android:id="@+id/trip_buy_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/mregular"
+                    android:text="20" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/btnpls" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/mlight"
+                android:text="@string/buy_details_info"
+                android:id="@+id/trip_menu_info"
+                android:textColor="@color/greyPrimary"
+                android:lineSpacingExtra="8dp"
+                android:textSize="18sp" />
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_layout_white"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="20dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mregular"
+            android:text="@string/pricing_details_title"
+            android:textColor="@color/blackPrimary"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/mlight"
+            android:text="@string/pricing_details_desc"
+            android:textColor="@color/greyPrimary"
+            android:textSize="16sp" />
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/mlight"
+                android:text="$ 123"
+                android:textColor="@color/bluePrimary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/div" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/mlight"
+                android:text="@string/pricing_total"
+                android:textColor="@color/greyPrimary"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="@font/mlight"
+                android:text="$ 123"
+                android:textColor="@color/greenPrimary"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_btn_green_primary"
+        android:fontFamily="@font/mmedium"
+        android:text="@string/checkout_btn"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/btn2"
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_layout_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/btn1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_back" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

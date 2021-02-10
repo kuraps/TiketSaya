@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">TiketSaya</string>
+    <string name="app_desc">Travel Becomes More Fun</string>
+    <string name="app_started_menu">Discover<br />The Beauty<br />Of Earth</string>
+    <string name="signin_btn">SIGN IN</string>
+    <string name="continue_btn">CONTINUE</string>
+    <string name="complete_btn">COMPLETE</string>
+    <string name="finish_btn">START A NEW JOURNEY</string>
+    <string name="share_btn">Share to Friends</string>
+    <string name="regist_btn">NEW ACCOUNT</string>
+    <string name="newaccount_label">Create New Account</string>
+    <string name="username_label">Username</string>
+    <string name="username_hint">Your Username</string>
+    <string name="password_label">Password</string>
+    <string name="password_hint">Your Password</string>
+    <string name="email_label">Email</string>
+    <string name="email_hint">example@gmail.com</string>
+    <string name="register_menu_title">Create New Account</string>
+    <string name="register_menu_secondary">Please fill up the forms below for informations</string>
+    <string name="register2_menu_title">Selfie Time</string>
+    <string name="register2_menu_secondary">Let the world knows yourself more better and ever</string>
+    <string name="name_label">Name</string>
+    <string name="name_hint">Your Name</string>
+    <string name="passion_label">Passion</string>
+    <string name="passion_hint">Your Passion</string>
+    <string name="success_menu_title">You are Great!</string>
+    <string name="success_menu_secondary">Welcome to TiketSaya, lets take a journey and enjoy that</string>
+
+
+    <string name="dashboard_title">My Dashboard</string>
+    <string name="mainmenu_title">Main Menu</string>
+    <string name="mainmenu_desc">Explore the beauty of world</string>
+    <string name="mainmenu_tips">TicketTips</string>
+    <string name="mainmenu_tips_sec">Learn it to many benefits</string>
+
+    <string name="buy_btn">BUY TICKET</string>
+    <string name="buy_title">Buy Ticket</string>
+    <string name="buy_details_title">Ticket Details</string>
+    <string name="buy_details_desc">Check amount of Tickets</string>
+    <string name="buy_details_info">Kids who more 3 years old, should buy a ticket for join the trip, except under age (under 3 years old)</string>
+    <string name="pricing_details_title">Pricing</string>
+    <string name="pricing_details_desc">Your current balance is </string>
+    <string name="pricing_total">Total Price </string>
+    <string name="checkout_btn">CHECKOUT</string>
+
+    <string name="trip_name">Pisa Tower</string>
+    <string name="trip_location">Pisa City, Italy</string>
+    <string name="trip_menu_title">Information</string>
+    <string name="trip_menu_desc">Knowing before travel</string>
+    <string name="trip_menu_info">The Leaning of The Tower of Pisa comes into the story in 1173, when construction began.</string>
+
+    <string name="ticket_buyed_title">Whoaa you are awesome!</string>
+    <string name="ticket_buyed_desc">You are successful buy Tickets, enjoy your trip and dont forget to happy!</string>
+    <string name="ticket_buyed_btn">VIEW TICKET</string>
+    <string name="ticket_buyed_share">Share to Friends</string>
+    <string name="back_to_home">Back to Home</string>
+
+    <string name="my_profile_title">My Profile</string>
+    <string name="my_profile_ticket_title">My Ticket</string>
+    <string name="my_profile_ticket_sub">Explore the Beauty of world</string>
+    <string name="my_profile_ticket_no">Whoops you do not have any ticket :( buy it please</string>
+    <string name="signout_btn">Sign 0ut</string>
+    <string name="editprofile_btn">Edit Profile</string>
+
+    <string name="date">Date</string>
+    <string name="time">Depature Time</string>
+    <string name="information">Information</string>
+    <string name="print_btn">PRINT OUT</string>
+    <string name="back_btn">Back to My Profile</string>
+
+    <string name="editprofile_title">Edit Profile</string>
+    <string name="editprofile_summary">We highly suggest you to use the correct Informations</string>
+    <string name="editprofile_save">Save Profile</string>
+
+    <string name="no_username">Fill your Username!</string>
+    <string name="no_email">Fill your Email</string>
+    <string name="no_password">Fill your Password!</string>
+    <string name="continue_reg">CONTINUE</string>
+    <string name="loading_reg">LOADING...</string>
+    <string name="update_reg">UPDATING...</string>
+    <string name="username_already">Already username</string>
+    <string name="login_ok">Login Success</string>
+    <string name="login_fail">Login Failed</string>
+    <string name="no_db">No Database found!</string>
+
+    <string name="story_desc">Tap arrow to view story</string>
+    <string name="error_bck">Back once again to exit</string>
+    <string name="error_ed">You need to fill all data</string>
+    <string name="error_av">You need to add avatar</string>
+    <string name="error_em">Invalid email address</string>
+    <string name="invalid_data">Invalid data!</string>
+
+    <string name="cekpw">Check your password</string>
+    <string name="your_pw">Your Password is :</string>
+    <string name="forgot_pass_title">Forgot Password</string>
+    <string name="forgot_pass_summary">To find your password, please fill up valid Username and Email.</string>
+    <string name="ticket">Ticket</string>
+    <string name="tickets">Tickets</string>
+
+    <string name="maskapai">Maskapai</string>
+    <string name="maskapai_pick">Choose your best Maskapai</string>
+    <string name="flight_depature">Flight Depature</string>
+    <string name="flight_depature_info">Your flight departure time</string>
+    <string name="next_day">Next day</string>
+    <string name="tommorow">Tommorow</string>
+    <string name="buy_date">Buy Date</string>
+    <string name="expired">Expired on : </string>
+    <string name="notes">Notes : </string>
+
+
+    <string name="welcome_adapter_title">TiketSaya</string>
+    <string name="welcome_adapter_title2">Travel Around World</string>
+    <string name="welcome_adapter_title3">One Tap for Travel</string>
+    <string name="welcome_adapter_title4">Start a new Journey</string>
+    <string name="welcome_adapter_sub">Travel Becomes more fun</string>
+    <string name="welcome_adapter_sub2">You are will Discover the Beauty of World</string>
+    <string name="welcome_adapter_sub3">TiketSaya are really easy to use, faster, and secure</string>
+    <string name="welcome_adapter_sub4">Lets get Started</string>
+</resources>

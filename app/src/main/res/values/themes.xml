@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TiketSaya" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/bluePrimary</item>
+        <item name="colorPrimaryDark">@color/bluePrimary</item>
+        <item name="colorAccent">@color/bluePrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="DialogTrans" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!-- color primary  <item name="android:windowAnimationStyle">@style/ThemeWindowAnimationTransition</item>       -->
+    </style>
+</resources>
